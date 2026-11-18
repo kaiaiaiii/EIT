@@ -43,11 +43,11 @@ DT = 0.03                  # Zeitschritt (s)
 U_MAX = 0.30               # Wassergeschwindigkeit in Rohrmitte (m/s)
 
 # --- Blasen ---
-SPAWN_RATE = 15.0          # mittlere Zahl neuer Blasen pro Sekunde
-R_MEDIAN, R_SIGMA = 0.004, 0.35   # Blasenradius: lognormalverteilt (Median 4 mm)
+SPAWN_RATE = 1.0          # mittlere Zahl neuer Blasen pro Sekunde
+R_MEDIAN, R_SIGMA = 0.009, 0.35   # Blasenradius: lognormalverteilt (Median 4 mm)
 WOBBLE = 0.012             # seitliches Zittern (m/sqrt(s)), 0 = aus
 SLIP = 0.0                 # Auftrieb relativ zum Wasser (m/s), 0 = mitgetragen
-N_TRACER = 400             # Wasser-Tracer (nur zur Visualisierung)
+N_TRACER = 0             # Wasser-Tracer (nur zur Visualisierung)
 
 # --- Elektroden ---
 N_PER_RING = 16                          # Elektroden pro Ring
@@ -380,4 +380,4 @@ anim = FuncAnimation(fig, update, interval=int(DT * 1000), blit=False, cache_fra
 if __name__ == "__main__":
     plt.show()
     # Als GIF speichern (statt plt.show()):
-    # anim.save("blasen.gif", writer="pillow", fps=30, frames=300)
+    anim.save("blasen.gif", writer="pillow", fps=30, frames=300)
