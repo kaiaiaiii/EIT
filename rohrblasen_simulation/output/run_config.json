@@ -1,0 +1,29 @@
+{
+  "pipe_radius": 0.12,
+  "pipe_height": 0.5,
+  "grid_spacing": 0.005,
+  "ring_heights": [
+    0.47,
+    0.5,
+    0.53
+  ],
+  "electrodes_per_ring": 16,
+  "water_conductivity": 0.05,
+  "air_conductivity": 1e-14,
+  "water_relative_permittivity": 80.0,
+  "air_relative_permittivity": 1.0006,
+  "electrode_voltage": 1.0,
+  "frequency_start": 1000.0,
+  "frequency_step": 1000.0,
+  "water_velocity": 0.2,
+  "bubble_rate": 4.0,
+  "bubble_radius_min": 0.006,
+  "bubble_radius_max": 0.016,
+  "lateral_drift": 0.012,
+  "dt": 0.02,
+  "total_time": 10.0,
+  "electrical_every_n_steps": 1,
+  "random_seed": 7,
+  "output_dir": "output",
+  "live_visualization": true
+}
